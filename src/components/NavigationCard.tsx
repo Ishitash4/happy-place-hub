@@ -12,12 +12,14 @@ interface NavigationCardProps {
 
 const NavigationCard = ({ to, title, description, Icon }: NavigationCardProps) => {
   return (
-    <Link to={to}>
-      <Card className="h-full p-6 bg-gradient-to-br from-[#2A2F3C] to-[#1A1F2C] border-[#403E43] hover:border-[#9b87f5] transition-all duration-300 group">
+    <Link to={to} className="block">
+      <Card className="h-full p-6 bg-gradient-to-br from-card to-muted border-border/50 card-hover">
         <div className="flex flex-col items-center text-center space-y-4">
-          <Icon className="w-12 h-12 text-[#9b87f5] group-hover:scale-110 transition-transform duration-300" />
-          <h3 className="text-xl font-semibold text-white">{title}</h3>
-          <p className="text-gray-400 text-sm">{description}</p>
+          <div className="p-3 rounded-full bg-primary/10">
+            <Icon className="w-8 h-8 text-primary transition-transform duration-300 group-hover:scale-110" />
+          </div>
+          <h3 className="text-xl font-semibold text-foreground">{title}</h3>
+          <p className="text-muted-foreground">{description}</p>
         </div>
       </Card>
     </Link>
