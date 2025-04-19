@@ -2,11 +2,11 @@
 import NavBar from "@/components/NavBar";
 
 const Todo = () => (
-  <div className="min-h-screen bg-background">
+  <div className="min-h-screen bg-[#1A1F2C]">
     <NavBar />
-    <main className="container mx-auto px-4 pt-24 pb-12 page-transition">
-      <h1 className="text-4xl font-bold text-foreground mb-8">Self-Care Tasks</h1>
-      <p className="text-muted-foreground">Track and manage your daily wellness activities...</p>
+    <main className="container mx-auto px-4 pt-24 pb-12">
+      <h1 className="text-4xl font-bold text-white mb-8">Todo List</h1>
+      <p className="text-gray-400">Coming soon...</p>
     </main>
   </div>
 );

@@ -4,38 +4,35 @@
 
 @layer base {
   :root {
-    --background: 226 45% 13%;
-    --foreground: 226 10% 90%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
-    --card: 226 35% 20%;
-    --card-foreground: 226 10% 90%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 226 45% 13%;
-    --popover-foreground: 226 10% 90%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --sidebar-background: 226 35% 20%;
-    --sidebar-foreground: 226 10% 90%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
 
-    --primary: 255 85% 75%;
-    --primary-foreground: 226 45% 13%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 226 35% 20%;
-    --secondary-foreground: 226 10% 90%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --muted: 226 35% 25%;
-    --muted-foreground: 226 10% 70%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
-    --accent: 255 85% 75%;
-    --accent-foreground: 226 45% 13%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 226 10% 90%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
 
-    --border: 226 35% 25%;
-    --input: 226 35% 25%;
-    --ring: 255 85% 75%;
-
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,19 +97,5 @@
 
   body {
     @apply bg-background text-foreground;
-  }
-}
-
-@layer components {
-  .card-hover {
-    @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-primary/25;
-  }
-
-  .page-transition {
-    @apply animate-in fade-in slide-in-from-bottom-4 duration-500;
-  }
-
-  .nav-item {
-    @apply transition-colors duration-200 hover:text-primary;
   }
 }

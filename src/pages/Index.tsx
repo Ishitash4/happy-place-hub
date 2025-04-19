@@ -1,5 +1,5 @@
 
-import { Brain, Book, List, Calendar, Settings, Gamepad, Store } from "lucide-react";
+import { Gamepad, Store, List, Calendar, Book, Settings } from "lucide-react";
 import NavigationCard from "@/components/NavigationCard";
 import NavBar from "@/components/NavBar";
 
@@ -7,55 +7,47 @@ const Index = () => {
   const navigation = [
     {
       to: "/games",
-      title: "Mindful Games",
-      description: "Practice mindfulness through engaging games",
+      title: "Games",
+      description: "Play Wordle and Memory games",
       Icon: Gamepad
     },
     {
       to: "/store",
-      title: "Wellness Store",
-      description: "Discover tools for your mental wellbeing",
+      title: "Store",
+      description: "Browse and get new games",
       Icon: Store
     },
     {
       to: "/todo",
-      title: "Self-Care Tasks",
-      description: "Track your daily wellness activities",
+      title: "Todo List",
+      description: "Manage your tasks",
       Icon: List
     },
     {
       to: "/emotion-scan",
-      title: "Mood Scanner",
-      description: "Check in with your emotional state",
-      Icon: Brain
+      title: "Emotion Scan",
+      description: "Track your emotional state",
+      Icon: Calendar
     },
     {
       to: "/journal",
-      title: "Reflection Journal",
-      description: "Document your thoughts and feelings",
+      title: "Journal",
+      description: "Write your thoughts",
       Icon: Book
     },
     {
       to: "/options",
-      title: "Your Settings",
-      description: "Personalize your wellness journey",
+      title: "Options",
+      description: "Customize your experience",
       Icon: Settings
     }
   ];
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-[#1A1F2C]">
       <NavBar />
-      <main className="container mx-auto px-4 pt-24 pb-12 page-transition">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary/80 to-accent/80 bg-clip-text text-transparent">
-            Welcome to MindSpace
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Your personal sanctuary for mental wellness. Explore mindful games, track your mood, 
-            and journal your journey to better mental health.
-          </p>
-        </div>
+      <main className="container mx-auto px-4 pt-24 pb-12">
+        <h1 className="text-4xl font-bold text-white mb-8 text-center">Welcome to Game Hub</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {navigation.map((item) => (
             <NavigationCard key={item.to} {...item} />
